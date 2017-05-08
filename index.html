@@ -4,15 +4,27 @@
     <meta charset="utf-8">
     <title>JavaScript Code Challenge</title>
     <script type="text/javascript" src='./lib/jquery-3.2.1.js'></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   </head>
   <body>
 
-    <form id="note-form">
-      <input type='text' />
+    <form id="note-form" class="form-horizontal">
+
+      <p>
+        Please enter a comment
+      </p>
+      <input id ='text' type='text' placeholder="New Comment"/>
       <input type='submit' />
     </form>
 
-    <div id='comment-list'></div>
+
+    <h4>Comments</h4>
+    <ul>
+      <div id='comment-list'>
+
+      </div>
+    </ul>
+
 
     <script type="text/javascript" src='src/CommentList.js'></script>
     <script type="text/javascript" src='src/Comment.js'></script>
